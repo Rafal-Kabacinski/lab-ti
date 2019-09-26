@@ -1,4 +1,4 @@
-# 08 - Git, Python podstawy
+# 08b - Python podstawy
 
 ## Przewodnik
 
