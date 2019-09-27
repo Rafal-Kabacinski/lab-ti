@@ -1,9 +1,5 @@
 # 08a - Instalacja Python na domowym komputerze
 
-## Czym jest Python?
-
-Python to projekt Open Source interpretowalnego języka programowania wysokiego poziomu. Python posiada rozbudowany wachlarz bibliotek, które pozwalają na wykonanie wielu prostych i skomplikowanych zadań. Czyni to z Pythona, obok języka *R* i *Matlab/GNU Octave*, jedno z najpopularniejszych aktualnie narzędzi do analizy danych. Równocześnie Python świetnie sprawdza się jako rozwiązanie narzędziowe do realizacji szeregu zadań wymaganych w zaawansowanym użytkowaniu komputerów osobistych. Zaletą Pythona jest jego wielo-platformowość,  poprawnie napisany skrypt uruchomimy na systemach Windows, Linux i OS X.
-
 ### Wersje Pythona: Python 3 czy Python 2?
 
 **Zdecydowanie Python 3!**. Aktualnie utrzymywane są dwie główne wersje interpretera: 3 oraz 2 (Python 3.74 i Python 2.7.16 w momencie pisania instrukcji). Dzieje się tak ze względu na konieczność utrzymania kompatybilności wstecznej. Obie wersje różnią się na tyle, że uruchomienie skryptu w nieprawidłowej wersji skończy się niepowodzeniem. Dla nowych projektów Python 3 jest najlepszym wyborem.
@@ -34,7 +30,7 @@ Czekamy na zakończenie procesu instalacji i zamykamy *Microsoft Store*.
 
 ### Linux Ubuntu 18.04
 
-W Ubuntu 18.04 Python 3 jest zainstalowany domyślnie razem z instalacją systemu. Konieczne jest jedynie instalacja menadżera pakietów dla Pythona 3 czyli *pip3*.
+W Ubuntu od wersji 18.04 Python 3 jest zainstalowany domyślnie razem z instalacją systemu. Konieczne jest jedynie instalacja menadżera pakietów dla Pythona 3 czyli *pip3*.
 
 W celu instalacji otwórz terminal wciskając na klawiaturze kombinację klawiszy: `Ctrl + Alt + T`. Następnie wykonaj następujące komendy (przepisz/wklej i zatwierdź wciskając `ENTER`):
 
@@ -50,7 +46,7 @@ sudo apt update
 sudo apt install python3-pip
 ```
 
-### Mac OS X
+### macOS
 
 TODO
 
@@ -70,7 +66,7 @@ Na klawiaturze wciśnij kombinację klawiszy: `Windows + R`. Pojawi się okienko
 
 Wciśnij na klawiaturze kombinację klawiszy: `Ctrl + Alt + T`.
 
-### Mac OS X
+### macOS
 
 TODO
 
@@ -99,7 +95,67 @@ Powyższa komenda zainstaluje następujące pakiety:
 
 ## Instalacja PyCharm
 
+PyCharm jest integrowanym środowiskiem programistycznym dla języka Python stworzonym przez firmę JetBrains. Jest to oprogramowanie wieloplatformowe, którego można używać na systemach Windows, GNU/Linux i macOS.
+
+### Microsoft Windows 10
+
+1. Wejdź na stronę: [https://www.jetbrains.com/pycharm/download/#section=windows](https://www.jetbrains.com/pycharm/download/#section=windows)
+
+2. Ściągnij wersję *Community* klikając czarny przycisk **Download**:
+
+![6_download_pycharm](./images/08a/6_download_pycharm.png)
+
+3. Uruchom ściągnięty instalator. Przeprowadź instalację z domyślnymi ustawieniami.
+
+### Linux Ubuntu
+
+W celu instalacji otwórz terminal wciskając na klawiaturze kombinację klawiszy: `Ctrl + Alt + T`. Następnie wykonaj następującą komendę (przepisz/wklej i zatwierdź wciskając `ENTER`):
+
+```shell
+sudo snap install pycharm-community --classic
+```
+
+### macOS
+
 TODO
+
+## Pierwsze uruchomienie PyCharm i konfiguracja środowiska
+
+Przy pierwszym uruchomieniu PyCharm, bez względu na wykorzystywany system operacyjny, zostaniemy zapytani o chęć zaimportowania ustawień środowiska. Wybieramy **Do not import settings** (1), a następnie **OK** (2):
+
+![7_pycharm_import](./images/08a/7_pycharm_import.png)
+
+Potwierdzamy licencję (1) i klikamy **Contuniue** (2):
+
+![8_pycharm_license](./images/08a/8_pycharm_license.png)
+
+Decydujemy czy chcemy pomagać w rozwijaniu PyCharm poprzez przesyłanie raportów . Wybieramy **Send Usage Statistics** lub **Don't send**:
+
+![9_pycharm_statistics](./images/08a/9_pycharm_statistics.png)
+
+Następnie mamy możliwość dostosowania interfejsu użytkownika do własnych preferencji. Można wykonać zmiany. Domyślne ustawienia uzyskujemy klikając **Skip Remaining and Set Defaults**:
+
+![10_pycharm_customize](./images/08a/10_pycharm_customize.png)
+
+W kolejnych krokach skonfigurujemy domyślny interpreter Python 3 wykorzystywany przy tworzeniu nowych projektów przez PyCharm. Kliknij **Configure** (1), a następnie **Settings** (2):
+
+![11_pycharm_settings](./images/08a/11_pycharm_settings.png)
+
+Przejdź do zakładki **Project Interpreter** (1), a następnie kliknij koło zębate w prawym górnym rogu (2):
+
+![12_pycharm_interpreter_tab](./images/08a/12_pycharm_interpreter_tab.png)
+
+Z wyskakującej listy wybieramy **Add...**:
+
+![13_pycharm_add](./images/08a/13_pycharm_add.png)
+
+Wybieramy zakładkę **System Interpreter** (1) i zatwierdzamy przyciskiem **OK** (2):
+
+![14_pycharm_system_interpreter](./images/08a/14_pycharm_system_interpreter.png)
+
+Po chwili interpreter zostanie dodany i zostanie wyświetlona pełna lista zainstalowanych dla niego pakietów. Zatwierdzamy wciskając **OK**:
+
+![15_pycharm_ok](./images/08a/15_pycharm_ok.png)
 
 ---
 
