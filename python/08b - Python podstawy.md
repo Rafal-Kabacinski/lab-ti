@@ -162,6 +162,76 @@ This is Jan , he is 21 years old and measures 1.8 m
 
 ### Listy i operacje na nich
 
+W Pythonie domyślą formą przechowywania grupy wartości jest lista (`list`). Listę wypełniamy wpisując kolejne wartości po przecinkach i umieszczając je w nawiasach kwadratowych:
+
+```python
+>>> primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
+```
+
+Do elementów listy możemy odwoływać się wykorzystując operator `[]`. Możliwy jest dostęp do pojedynczego elementu (lista indeksowana jest od 0), lub do jego zakresu :
+
+```python
+>>> primes[0]
+2
+>>> primes[-1]  # ostatni element
+37
+>>> primes[1:4] # zakres prawostronnie otwarty
+[3, 5, 7]
+>>> primes[3:]  # od indeksu początkowego do końca
+[7, 11, 13, 17, 19, 23, 29, 31, 37]
+```
+
+Listy można sklejać za pomocą operatora `+`:
+
+```python
+>>> primes + [41, 43, 47, 53, 59, 61, 67]
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
+```
+
+Istnieje możliwość zmiany zawartości listy:
+
+```python
+>>> my_list = [1, 2, 3]
+>>> my_list[0] = 3
+>>> my_list
+[3, 2, 3]
+```
+
+A także dodania kolejnego elementu z wykorzytaniem metody `append()`:
+
+```python
+>>> my_list.append(2)
+>>> my_list
+[3, 2, 3, 2]
+```
+
+Pojedyncza lista może zawierać wpisy różnego typu, także druga lista:
+
+```python
+>>> mixed_type_list = [1, "string", 0.43, [1, 2, 3, 4], ['a', 1, 'g']]
+```
+
+Bardzo przydatną funkcją jest `len()` pozwalającą na określenie długości listy, a także każdego innego obiektu w Python:
+
+```python
+>>> len(primes)
+12
+>>> len(my_list)
+4
+>>> len(mixed_type_list)
+5
+>>> len(mixed_type_list[4])
+3
+```
+
+---
+
+#### :hammer: :fire: Zadanie :fire: :hammer:
+
+1. TODO
+
+---
+
 ## Python w systemowej linii poleceń
 
 Interpreter Pythona można uruchomić także bezpośrednio z systemowej linii poleceń. Uruchomienie terminala linii poleceń różni się zależnie dla systemu. Aby sprawdzić jak uruchomić linię poleceń w systemie Linux Ubuntu i macOS zobacz instrukcję: [08a - Instalacja Python na domowym komputerze](./08a%20-%20Instalacja%20Python%20na%20domowym%20komputerze.md). W systemie Microsoft Windows wciśnij kombinację klawiszy: `Windows + R`. Pojawi się okienko *Uruchamianie*. Wpisz na klawiaturze frazę **cmd** (1), a następnie zatwierdź wciskając `ENTER` lub **OK** (2).
