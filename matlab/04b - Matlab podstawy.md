@@ -1,4 +1,4 @@
-# 04 - Matlab podstawy
+# 04b - Matlab podstawy
 
 ## Przewodnik
 

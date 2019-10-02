@@ -205,7 +205,7 @@ A także dodania kolejnego elementu z wykorzytaniem metody `append()`:
 [3, 2, 3, 2]
 ```
 
-Pojedyncza lista może zawierać wpisy różnego typu, także druga lista:
+Pojedyncza lista może zawierać wpisy różnego typu, także drugą listę:
 
 ```python
 >>> mixed_type_list = [1, "string", 0.43, [1, 2, 3, 4], ['a', 1, 'g']]
