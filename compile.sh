@@ -24,11 +24,12 @@ done
 # compile MD files
 find . -type f -iname "*.md" | while read f ; do
 	title=`basename "$f"`
-	grip --export --title "${title%.*}" "$f" "../build/${f%md}html"
+	f_ascii=`echo $f | iconv -f utf8 -t ascii//TRANSLIT`
+	grip --export --title "${title%.*}" "$f" "../build/${f_ascii%md}html"
 	MODIFICATION_DATE=`date -r "$f" '+%Y-%m-%d'`
-	"${SED[@]}" 's/\/__\/grip\/static\//..\/static\//g' "../build/${f%md}html"
-	"${SED[@]}" "s/{JUG:MODIFICATION_DATE}/$MODIFICATION_DATE/g" "../build/${f%md}html"
-	touch -r "$f" -c -m "../build/${f%md}html"
+	"${SED[@]}" 's/\/__\/grip\/static\//..\/static\//g' "../build/${f_ascii%md}html"
+	"${SED[@]}" "s/{JUG:MODIFICATION_DATE}/$MODIFICATION_DATE/g" "../build/${f_ascii%md}html"
+	touch -r "$f" -c -m "../build/${f_ascii%md}html"
 done
 
 # copy all other files
