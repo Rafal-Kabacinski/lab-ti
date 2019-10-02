@@ -26,11 +26,11 @@ Sometimes a homework will be included in the script, marked as:
 
 Przykładowe wstawienie rysunku:
 
-![logo_matlab](./images/04/MATLAB-Logo.png)
+![logo_matlab](_images/04/MATLAB-Logo.png)
 
 Przykładowy link do zewnętrznych kodów:
 
-[link_do_skryptu](./resources/04/sample_script.m)
+[link_do_skryptu](_resources/04/sample_script.m)
 
 Przykładowe wstawianie kodu:
 
