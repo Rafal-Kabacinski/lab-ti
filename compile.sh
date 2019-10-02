@@ -8,7 +8,7 @@ find . -name "*.html" | while read f ; do
 	fi
 done
 
-rm -r build
+rm -rf build
 cd src
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
