@@ -8,25 +8,25 @@ Python to projekt Open Source interpretowalnego języka programowania wysokiego 
 
 Jeżeli w środowisku PyCharm napotkamy po uruchomieniu otwarty projekt należy go zamknąć. Z menu wybieramy **File** &rarr; **Close Project**:
 
-![1a_close_project](./images/08b/1a_close_project.png)
+![1a_close_project](_images/08b/1a_close_project.png)
 
 Następnie klikamy **Create New Project**:
 
-![1b_new_project](./images/08b/1b_new_project.png)
+![1b_new_project](_images/08b/1b_new_project.png)
 
 W kolejnym oknie nadajemy nazwę projektu oraz jego lokalizację (1). **UWAGA** W nazwie projektu i lokalizacji nie używamy znaków specjalnych (na przykład polskich liter) oraz znaków białych, takich jak spacje (można je zastąpić znakiem podkreślenia: `_` ).
 
 Następnie rozwijamy zakładkę **Project Interpreter:** (2) i wybieramy opcję **Existing interpreter** (3). Zatwierdzamy przyciskiem **Create** (4).
 
-![2_new_project_settings](./images/08b/2_new_project_settings.png)
+![2_new_project_settings](_images/08b/2_new_project_settings.png)
 
 Domyślnie utworzony projekt nie zawiera żadnych plików. Aby dodać nowy plik naciskamy prawym klawiszem myszy na nazwę projektu (1), następnie z menu **New** (2) wybieramy pozycję **Python File** (3) :
 
-![3_new_python_file](./images/08b/3_new_python_file.png)
+![3_new_python_file](_images/08b/3_new_python_file.png)
 
 Wyskoczy okienko, w którym wpisujemy nazwę dodawanego pliku skryptowego i zatwierdzamy wciskając `ENTER`:
 
-![4_file_name](./images/08b/4_file_name.png)
+![4_file_name](_images/08b/4_file_name.png)
 
 ---
 
@@ -40,7 +40,7 @@ Utwórz nowy projekt *hello_python* zgodnie z powyższą instrukcją. Dodaj do p
 
 Python jest językiem skryptowym, interpretowalnym. Dlatego można z niego korzystać wykorzystując interaktywny interpreter konsolowy. PyCharm posiada wbudowane okno konsoli Pythona. W celu jego uruchomienia klikamy **Python Console** (1) w lewym dolnym rogu. Po chwili zostanie uruchomiony interpreter Pythona i pojawi się znak zachęty (2).
 
-![5_python_console](./images/08b/5_python_console.png)
+![5_python_console](_images/08b/5_python_console.png)
 
 ---
 
@@ -240,7 +240,7 @@ Bardzo przydatną funkcją jest `len()` pozwalającą na określenie długości 
 
 Interpreter Pythona można uruchomić także bezpośrednio z systemowej linii poleceń. Uruchomienie terminala linii poleceń różni się zależnie dla systemu. Aby sprawdzić jak uruchomić linię poleceń w systemie Linux Ubuntu i macOS zobacz instrukcję: [08a - Instalacja Python na domowym komputerze](./08a%20-%20Instalacja%20Python%20na%20domowym%20komputerze.md). W systemie Microsoft Windows wciśnij kombinację klawiszy: `Windows + R`. Pojawi się okienko *Uruchamianie*. Wpisz na klawiaturze frazę **cmd** (1), a następnie zatwierdź wciskając `ENTER` lub **OK** (2).
 
-![6_windows_cmd](./images/08b/6_windows_cmd.png)
+![6_windows_cmd](_images/08b/6_windows_cmd.png)
 
 W otwartym terminalu wykonaj następującą komendę:
 
