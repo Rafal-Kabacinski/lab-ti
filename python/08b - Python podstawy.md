@@ -179,6 +179,8 @@ Do elementów listy możemy odwoływać się wykorzystując operator `[]`. Możl
 [3, 5, 7]
 >>> primes[3:]  # od indeksu początkowego do końca
 [7, 11, 13, 17, 19, 23, 29, 31, 37]
+>>> primes[::2] # co drugi element z listy
+[2, 5, 11, 17, 23, 31]
 ```
 
 Listy można sklejać za pomocą operatora `+`:
@@ -228,7 +230,9 @@ Bardzo przydatną funkcją jest `len()` pozwalającą na określenie długości 
 
 #### :hammer: :fire: Zadanie :fire: :hammer:
 
-1. TODO
+1. Korzystając z konsoli utwórz listę liczb naturalnych od 0 do 13 i przypisz ją do zmiennej.
+2. Utwórz drugą listę, która zawierać będzie wewnątrz dwie listy: listę liczb parzystych i nieparzystych. **UWAGA** Do utworzenia obu list wykorzystaj istniejącą już listę liczb naturalnych i operator `[]`.
+3. Utwórz trzecią listę, która zawierać będzie długości obu list zawartych w liście drugiej.
 
 ---
 
@@ -256,7 +260,57 @@ Wypróbuj część z poznanych, podstawowych funkcji języka Python także w kon
 
 ## Skrypty wykonywalne
 
+Kiedy chcemy stworzyć użytkowy kod wskazane jest, aby do nie wykorzystywać do konsoli, lecz zapisać nasz kod w pliku, który wykonamy w całości, a nie jak dotychczas wpisując pojedyncze komendy. W przypadku Pythona pliki skryptowe posiadają rozszerzenie `.py`. W początkowej części zajęć utworzyliśmy nasz pierwszy skrypt o nazwie *my_first_script.py*.
+
+---
+
+#### :hammer: :fire: Zadanie :fire: :hammer:
+
+W skrypcie *my_first_script.py* wklej przykładowy poniższy kod:
+
+```python
+print("Hello Python!")
+
+name = 'XYZ'
+age = 20
+
+print("My name is", name, "and I'm ", age, "years old")
+```
+
+---
+
+W celu pierwszego wykonania skryptu klikamy prawym klawiszem myszy na zakładce z nazwą skryptu i wybieramy **Run '*nazwa_skryptu*'**, lub wciskamy kombinację klawiszy `Ctrl + Shift + F10`:
+
+![7_first_run](./images/08b/7_first_run.png)
+
+W dolnej części okna PyCharm wyświetlona zostanie zakładka **Run** (1), a w konsoli pojawi się wynik wykonywania naszego skryptu (2):
+
+![8_run_console](./images/08b/8_run_console.png)
+
+Każde kolejne wykonanie skryptu od tego momentu może zostać wywołanie przez wciśnięcie przycisku **Play** (1) w prawym górnym rogu lub wciskając kombinację klawiszy `Shift + F10`. Jeżeli w projekcie wywołaliśmy wykonanie więcej niż jednego skryptu, aktualnie wykonywany skrypt możemy wybrać z rozwijanej listy (2):
+
+![9_rerun](./images/08b/9_rerun.png)
+
+---
+
+#### :hammer: :fire: Zadanie :fire: :hammer:
+
+1. Wykonaj skrypt *my_first_script.py* według powyższej instrukcji.
+2. Wprowadź drobne zmiany do skryptu i wykonaj go ponownie.
+
+---
+
 ### Komentarze
+
+Tekst umieszczany po znaku `#` jest ignorowany przez interpreter Pythona. Za znakiem `#` można umieszczać komentarze do kodu. Komentarz może pojawić się na początku linii lub po linii która ma zostać wykonania. Komentarz może zostać wykorzystany do dezaktywacji fragmentu kodu:
+
+```python
+# to jest komentarz na początku linii
+x = 5 # a to komentrz opisujący przypisanie wartości 5 do zmiennej x
+
+# a poniższy komentarz dezaktywuje linię kodu
+# print('Bye Python!')
+```
 
 ## Pętla `for`
 
