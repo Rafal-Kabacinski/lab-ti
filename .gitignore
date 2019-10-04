@@ -1,2 +1,9 @@
 **/.vscode/
 build
+*.aux
+*.bbl
+*.toc
+*.bcf
+*.blg
+*.out
+*.log
