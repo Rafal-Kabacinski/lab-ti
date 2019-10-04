@@ -230,7 +230,7 @@ Bardzo przydatną funkcją jest `len()` pozwalającą na określenie długości 
 
 #### :hammer: :fire: Zadanie :fire: :hammer:
 
-1. Korzystając z konsoli utwórz listę liczb naturalnych od 0 do 13 i przypisz ją do zmiennej.
+1. Korzystając z konsoli utwórz listę liczb naturalnych od 0 do 12 włącznie i przypisz ją do zmiennej.
 2. Utwórz drugą listę, która zawierać będzie wewnątrz dwie listy: listę liczb parzystych i nieparzystych. **UWAGA** Do utworzenia obu list wykorzystaj istniejącą już listę liczb naturalnych i operator `[]`.
 3. Utwórz trzecią listę, która zawierać będzie długości obu list zawartych w liście drugiej.
 
@@ -281,15 +281,15 @@ print("My name is", name, "and I'm ", age, "years old")
 
 W celu pierwszego wykonania skryptu klikamy prawym klawiszem myszy na zakładce z nazwą skryptu i wybieramy **Run '*nazwa_skryptu*'**, lub wciskamy kombinację klawiszy `Ctrl + Shift + F10`:
 
-![7_first_run](./images/08b/7_first_run.png)
+![7_first_run](./_images/08b/7_first_run.png)
 
 W dolnej części okna PyCharm wyświetlona zostanie zakładka **Run** (1), a w konsoli pojawi się wynik wykonywania naszego skryptu (2):
 
-![8_run_console](./images/08b/8_run_console.png)
+![8_run_console](./_images/08b/8_run_console.png)
 
 Każde kolejne wykonanie skryptu od tego momentu może zostać wywołanie przez wciśnięcie przycisku **Play** (1) w prawym górnym rogu lub wciskając kombinację klawiszy `Shift + F10`. Jeżeli w projekcie wywołaliśmy wykonanie więcej niż jednego skryptu, aktualnie wykonywany skrypt możemy wybrać z rozwijanej listy (2):
 
-![9_rerun](./images/08b/9_rerun.png)
+![9_rerun](./_images/08b/9_rerun.png)
 
 ---
 
@@ -314,14 +314,173 @@ x = 5 # a to komentrz opisujący przypisanie wartości 5 do zmiennej x
 
 ## Pętla `for`
 
-## Instrukcja warunkowa `if elif else`
+W Python pętla `for` służy do przechodzenia po wszystkich elementach zadanego zbioru. Zbiorem może być dowolna zdefiniowana sekwencja, na przykład lista, albo ciąg znaków. Na przykład:
 
-## Operacje na plikach
+```python
+students = ['Marek', 'Alicja', 'Franciszek', 'Karolina']
+for s in students:
+    print(s, len(s))
 
-## Zadanie końcowe :fire: :hammer:
+print() # wypisuje pustą linię
 
-## Zadanie domowe :boom: :house:
+for character in students[1]:
+    print(character)
+    print("ASCII:", ord(character)) # funkcja ord() zwraca kod ASCII znaku
+```
+
+> Marek 5  
+> Alicja 6  
+> Franciszek 10  
+> Karolina 8  
+>  
+> A  
+> ASCII: 65  
+> l  
+> ASCII: 108  
+> i  
+> ASCII: 105  
+> c  
+> ASCII: 99  
+> j  
+> ASCII: 106  
+> a  
+> ASCII: 97
+
+Zwróć uwagę na sposób definiowania *ciała* wyrażenia `for`. Wszystkie komendy, które mają zostać powtórzone w ramach pętli zostały *wcięte*. Wcięcie wykonujemy poprzez wciśnięcie klawisza **TAB** na klawiaturze. Komenda, która ma zostać umieszczona poza pętlą pojawia się już bez wcięcia (patrz linia `print() # wypisuje pustą linię`). Opisywany sposób grupowania komend dotyczy wszystkich form stosowanych w Python, instrukcji warunkowych czy funkcji. Istnieje możliwość zagnieżdżonego grupowania i umieszczenia pętli w pętli poprzez wykonywanie kolejnych wcięć:
+
+```python
+students = ['Marek', 'Alicja', 'Franciszek', 'Karolina']
+for s in students:
+    for character in students[1]:
+        print(character)
+        print("ASCII:", ord(character))
+
+    print()  # wypisuje pustą linię
+```
+
+### Funkcja `range()`
+
+Kiedy zaistnieje konieczność przejścia pętlą przez sekwencje liczb można wykorzystać do tego celu funkcję `range()`, która generuje ciąg arytmetyczny:
+
+```python
+for n in range(10):   # generuje zakres od 0 do 9 (przedział prawostronnie otwarty)
+    print(n, end=" ") # end=" " zamienia znak końca linii na spację
+```
+
+> 0 1 2 3 4 5 6 7 8 9
+
+```python
+for n in range(2, 11): # generuje zakres od 2 do 10
+    print(n, end=" ")
+```
+
+> 2 3 4 5 6 7 8 9 10
+
+```python
+for n in range(-10, 100, 10): # generuje zakres od -10 do 90, z krokiem 10
+    print(n, end=" ")
+```
+
+> -10 0 10 20 30 40 50 60 70 80 90
+
+Funkcję `range()` możemy wykorzystać na przykład do indeksowania sekwencji:
+
+```python
+animals = ['Dog', 'Cat', 'Monkey', 'Tiger', 'Parrot']
+for anmimal_index in range(len(animals)):
+    animals[anmimal_index] = str(anmimal_index) + ". " + animals[anmimal_index]
+    # animal_index jest liczbą całkowitą, w celu zamiany na ciąg znaków korzystamy z str()
+
+print(animals)
+```
+
+> ['0. Dog', '1. Cat', '2. Monkey', '3. Tiger', '4. Parrot']
 
 ---
 
-Autorzy: *Tomasz Mańkowski*
+#### :hammer: :fire: Zadanie :fire: :hammer:
+
+1. Napisz skrypt w którym utworzysz listę liczb o dowolnej długości, lista powinna zawierać różne, dowolne wartości.
+2. Napisz pętlę, która wyświetli potęgę każdej z podanych licz.
+3. Dodaj do skryptu dwie zmienne, które będą określać przedział listy dla której będzie wykonana operacja. Napisz drugą pętlę która będzie wyświetlać wynik sześcianu liczb z podanego zakresu. **PODPOWIEDŹ** Wykorzystaj funkcję `range()`.
+
+---
+
+## Instrukcja warunkowa `if elif else`
+
+Instrukcje warunkowe pozwalają na wykonywanie części kodu, jeżeli został spełniony zadany warunek. W przypadku Python przykładowe wykorzystanie konstrukcji `if` wygląda następująco:
+
+```python
+if x < 0:
+    print('Negative value')
+elif x == 0:
+    print('Zero')
+elif x == 1:
+    print('One')
+else:
+    print('More than one')
+```
+
+Jak widać w powyższym przykładzie przypisanie instrukcji do wykonania po spełnieniu warunku wykonywane jest przez zastosowanie *wcięć*. Podstawowa forma instrukcji warunkowej może zawierać tylko `if`, `elif` i `else` nie są konieczne. Jeżeli warunek `if` nie zostanie spełniony sprawdzane są kolejne warunki zawarte w `elif`, na końcu jeżeli żaden warunek nie został spełniony program może wykonać instrukcje zawarte w sekcji `else`.
+
+---
+
+#### :hammer: :fire: Zadanie :fire: :hammer:
+
+1. Napisz skrypt w którym utworzysz listę imion swoich kolegów z szkolnej ławki, około 10.
+2. Napisz program który wypisze tylko te imiona których długość jest większa niż 5. **PODPOWIEDŹ** Skorzystaj z pętli `for` i zagnieżdżonej w niej instrukcji warunkowej.
+
+---
+
+## Zadanie końcowe :fire: :hammer:
+
+1. Twoja ulubiona lokalna pizzeria sprzedaje 4 rozmiary pizzy *Pepperoni* w cenach podanych w tabeli poniżej. Umieść rozmiary pizzy w jednaj liście, a odpowiadające im ceny w drugiej liście. Napisz skrypt, który wybierze najbardziej opłacalną pizzę. **PODPOWIEDŹ** w pętli `for` wykorzystaj funkcję `range()` do indeksowania sekwencji.
+
+|Średnica|Cena|
+|-|-|
+|24 cm|22,60 zł|
+|32 cm|32,60 zł|
+|42 cm|38,70 zł|
+|51 cm|46,30 zł|
+
+2. Na kolejkę górską wpuszczane są jedynie dzieci o wzroście większym niż 120 cm. W liście *names* umieść imiona dzieci, a w liście *heights* ich wzrost. Napisz skrypt który wypisze tekstową informację zapraszającą dzieci do wsiadania, "XYZ! You are xxx cm in height, come in!". Przykładowe dane i wynik skryptu:
+
+|Imię|Wzrost [cm]|
+|-|-|
+|Anna|80|
+|Jan|122|
+|Marcin|140|
+|Karolina|101|
+|Zofia|132|
+|Dariusz|120|
+|Joanna|115|
+
+> Jan! You are 122 cm in height, come in!  
+> Marcin! You are 140 cm in height, come in!  
+> Zofia! You are 132 cm in height, come in!  
+
+## Zadanie domowe :boom: :house:
+
+#### Zadanie 1
+
+Napisz skrypt rysujący w konsoli choinkę o zadanej wysokości. Przykładowo dla `height = 5`:
+
+![10_tree](./_images/08b/10_tree.png)
+
+#### Zadanie 2
+
+Napisz skrypt rysujący w konsoli pusty kwadrat o zadanej długości boku. Przykładowo dla `side = 4`:
+
+![11_rectangle](./_images/08b/11_rectangle.png)
+
+#### Zadanie 3
+
+Dany jest tekst:
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis feugiat malesuada. Cras iaculis iaculis lacus quis tempus. Quisque viverra erat sit amet odio condimentum venenatis. Aliquam accumsan porta massa. Nam fermentum gravida fringilla. Morbi ut ornare metus, id congue erat. Vestibulum in est nec dolor malesuada vulputate vitae non ligula. Sed ut elit in libero hendrerit ultricies varius suscipit diam.
+
+Napisz skrypt który w powyższym tekście zliczy liczbę wyrazów, znajdzie w którym miejscu w ciągu występuje słowo "congue", zliczy występowanie litery 'a' w tekście. **PODPOWIEDŹ** Każdy z wymienionych zadań jesteś w stanie wykonać sam, *ręcznie*, lecz spróbuj wyszukać w Internecie łatwiejsze rozwiązanie!
+
+---
+
+Autorzy: *Tomasz Mańkowski*, *Jakub Tomczyński*
