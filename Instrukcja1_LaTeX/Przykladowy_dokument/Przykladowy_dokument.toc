@@ -1,0 +1,5 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}\LaTeX \ w praktyce}{1}% 
+\contentsline {section}{\numberline {2}Formu\IeC {\l }y matematyczne w \LaTeX u}{1}% 
+\contentsline {section}{\numberline {3}Tabele i rysunki}{2}% 
+\contentsline {section}{\numberline {4}Kod \IeC {\'z}r\IeC {\'o}d\IeC {\l }owy w dokumentach}{2}% 

@@ -1,0 +1,16 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[0] Config.pm:307> INFO - Logfile is 'TI_Instrukcja1_LaTeX.blg'
+[30] biber-MSWIN64:315> INFO - === 
+[55] Biber.pm:375> INFO - Reading 'TI_Instrukcja1_LaTeX.bcf'
+[147] Biber.pm:905> INFO - Found 4 citekeys in bib section 0
+[164] Biber.pm:4196> INFO - Processing section 0
+[167] Utils.pm:75> INFO - Globbing data source 'bibliografia.bib'
+[179] Utils.pm:91> INFO - Globbed data source 'bibliografia.bib' to bibliografia.bib
+[193] Biber.pm:4373> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[202] bibtex.pm:1462> INFO - LaTeX decoding ...
+[209] bibtex.pm:1281> INFO - Found BibTeX data source 'bibliografia.bib'
+[238] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[238] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[238] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pl-PL'
+[242] bbl.pm:648> INFO - Writing 'TI_Instrukcja1_LaTeX.bbl' with encoding 'UTF-8'
+[243] bbl.pm:751> INFO - Output to TI_Instrukcja1_LaTeX.bbl

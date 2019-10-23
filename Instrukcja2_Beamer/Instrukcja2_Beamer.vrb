@@ -1,0 +1,10 @@
+\frametitle{Kod źródłowy}
+Na slajdach można wstawiać kod źródłowy za pomocą poleceń \emph{verb} jak i otoczeń \emph{lstlisting}. Konieczne jest jednak oznaczenie danego slajdu za pomocą argumentu opcjonalnego:
+	
+	\begin{block}{Przykład}
+	\verb|\begin{frame}[fragile]|\\
+	\verb|	\begin{lstlisting}|\\
+	\verb|		Kod źródłowy|\\
+	\verb|	\end{lstlisting}|\\
+	\verb|\end{frame}|
+	\end{block}

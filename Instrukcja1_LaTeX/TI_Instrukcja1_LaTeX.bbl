@@ -1,0 +1,87 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{lshort2e}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=da126d282a6ed41d6946f64b08dd3300}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Tobias\bibnamedelima Oetiker},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{da126d282a6ed41d6946f64b08dd3300}
+      \strng{fullhash}{da126d282a6ed41d6946f64b08dd3300}
+      \strng{bibnamehash}{da126d282a6ed41d6946f64b08dd3300}
+      \strng{authorbibnamehash}{da126d282a6ed41d6946f64b08dd3300}
+      \strng{authornamehash}{da126d282a6ed41d6946f64b08dd3300}
+      \strng{authorfullhash}{da126d282a6ed41d6946f64b08dd3300}
+      \field{sortinit}{a}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://ctan.org/pkg/lshort-english}}
+      \field{title}{A (Not So) Short Introduction to \LaTeXe}
+      \field{year}{2018}
+    \endentry
+    \entry{overleaf}{manual}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.overleaf.com/learn/latex/Main_Page}}
+      \field{title}{Dokumentacja portalu Overleaf}
+    \endentry
+    \entry{lshort2ePL}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=1211ea28721d857c27bdd58da1abae5f}{%
+           family={inni},
+           familyi={i\bibinitperiod},
+           given={Tobias\bibnamedelima Oetiker},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={i},
+           prefixi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{1211ea28721d857c27bdd58da1abae5f}
+      \strng{fullhash}{1211ea28721d857c27bdd58da1abae5f}
+      \strng{bibnamehash}{1211ea28721d857c27bdd58da1abae5f}
+      \strng{authorbibnamehash}{1211ea28721d857c27bdd58da1abae5f}
+      \strng{authornamehash}{1211ea28721d857c27bdd58da1abae5f}
+      \strng{authorfullhash}{1211ea28721d857c27bdd58da1abae5f}
+      \field{sortinit}{i}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://ctan.org/tex-archive/info/lshort/polish/}}
+      \field{title}{Nie za krótkie wprowadzenie do systemu \LaTeXe}
+      \field{year}{2007}
+    \endentry
+    \entry{WikiBook}{manual}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://pl.wikibooks.org/wiki/LaTeX}}
+      \field{title}{LaTeX w Wikibooks}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

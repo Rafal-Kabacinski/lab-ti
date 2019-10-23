@@ -1,0 +1,44 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {polish}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Czym jest \LaTeX }{1}{section.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Rozpocz\IeC {\k e}cie pracy w \LaTeX u}{2}{section.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Struktura dokumentu}{2}{subsection.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Komendy w \LaTeX u}{4}{subsection.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Pisanie dokument\IeC {\'o}w w j\IeC {\k e}zyku polskim}{5}{subsection.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Podstawy pisania dokument\IeC {\'o}w w \LaTeX u}{5}{section.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Tytu\IeC {\l } i autor}{5}{subsection.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Spis tre\IeC {\'s}ci}{6}{subsection.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Otoczenia}{7}{subsection.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Formatowanie tekstu}{7}{subsection.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Formu\IeC {\l }y matematyczne}{8}{section.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Tabele i rysunki}{10}{section.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Tabele}{10}{subsection.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Zaawansowane kwestie zwi\IeC {\k a}zane z tabelami}{11}{subsubsection.5.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Rysunki}{12}{subsection.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Odwo\IeC {\l }ania do obiekt\IeC {\'o}w}{13}{subsection.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Kod \IeC {\'z}r\IeC {\'o}d\IeC {\l }owy w dokumentach}{13}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Bibliografia}{14}{section.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Definowanie plik\IeC {\'o}w \emph {*.bib}}{14}{subsection.7.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Korzystanie z BibTeX}{17}{subsection.7.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Overleaf}{19}{section.8}% 
